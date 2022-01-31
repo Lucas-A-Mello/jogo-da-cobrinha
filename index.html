@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+</head>
+<body>
+
+    <canvas id="stage" height="400" width="400"></canvas>
+    <script type="text/javascript">
+
+        window.onload = function(){
+        
+            var stage = document.getElementById('stage');
+            var ctx = stage.getContext('2d');
+
+            setInterval(game, 60);
+
+            const vel = 1;
+            var vx = vy = 0;
+            var px = 10;
+            var py = 15;
+            var lp = 20;
+            var qp = 20;
+            var ax = ay = 15;
+
+            var trail = [];
+            tail = 5;
+
+            function game(){
+
+            
+            ctx.fillStyle = 'black';
+            ctx.fillRect(0,0, stage.width, stage.height);
+
+
+            }
+
+        }
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
